@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="assets/favicon.png">
+    <title>Conversor de moedas</title>
+</head>
+<body>
+    
+    <main>
+	
+		<div class='box-conversor'>
+		
+			<div class='titulo-coversor'>
+	
+				<h1> Conversor de moedas </h1>
+	 
+			</div>
+			
+			<div class='conversor row'> 
+
+				<div class='selecionar converter col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12'>
+				
+					<div class='itens-conversor'>
+					
+						<input type='number' placeholder='$' class='input-converter'>
+					
+						<div class='img-conversor'>
+						
+							<img src='https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/bandeira-estados-unidos.jpg' class='img-converter'>
+						
+						</div>
+					
+						<select name="moeda" class='moeda'>
+						  <option value="USD" selected>USD</option>
+						  <option value="EUR">EUR</option>
+						  <option value="CHF">CHF</option>
+						  <option value="GBP">GBP</option>
+						  <option value="BRL">BRL</option>
+						</select>
+					
+					</div>
+				
+				</div>
+				
+				<div class='seta-converter col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12'>
+					<span> ➔ </span>
+				</div>
+				
+				<div class='selecionar convertido col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12'>
+				
+					<div class='itens-conversor'>
+				
+						<input type='number' placeholder='$' disabled class='input-convertido'>
+						
+						<div class='img-conversor'>
+						
+							<img src='https://static.preparaenem.com/2021/11/bandeira-do-brasil.jpg' class='img-convertido'>
+						
+						</div>
+					
+						<select name="moeda-convertida" class='moeda-convertida'>
+						  <option value="USD">USD</option>
+						  <option value="EUR">EUR</option>
+						  <option value="CHF">CHF</option>
+						  <option value="GBP">GBP</option>
+						  <option value="BRL" selected>BRL</option>
+						</select>
+						
+					</div>
+					
+				</div>
+
+			</div>
+			
+			<div class='converter-acao'> <button> Converter </button> </div>
+		
+		</div>
+	
+	</main>
+
+    <script src="script.js"></script>
+</body>
+</html>

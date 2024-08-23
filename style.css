@@ -1,0 +1,155 @@
+/* Remover setas de incremento e decremento do input Number para navegadores baseados em WebKit (Chrome, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remover setas de incremento e decremento do input Number para baseados em Gecko (Firefox) */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Estilos */
+
+* {
+	
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+}
+
+main {
+	
+	width:100%;
+	height:100vh;
+	background:#000;
+	color:#004aad;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	
+}
+
+.box-conversor {
+	
+	width:60%;
+	height:350px;
+	padding:20px;
+	border:5px solid #004aad;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-around;
+	
+}
+
+.titulo-coversor {
+	text-align:center;
+}
+
+.conversor {
+	padding:10px;
+}
+
+.selecionar {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.itens-conversor {
+	display:flex;
+	padding:10px;
+	border-radius:30px;	
+	background:#004aad;
+}
+
+.itens-conversor,input,.img-conversor,select {
+	
+	padding:5px;
+	border:0;
+	color:white;
+	width:100%;	
+	
+}
+
+option {
+	color: #000;
+}
+
+input,.img-conversor,select {
+	
+	background-color: transparent;
+	
+}
+
+input::placeholder {
+	color:#fff;
+}
+
+.img-conversor img {
+	
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:2px solid #fff;
+	
+}
+
+.seta-converter {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:48px;
+}
+
+.converter-acao {
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	
+}
+
+.converter-acao button {
+	
+	border:0;
+	background:#004aad;
+	padding:15px 25px;
+	color:#fff;
+	font-weight:bold;
+	border-radius:30px;
+	
+}
+
+input:focus,select:focus {
+    outline: none; /* Remove a borda de foco */
+    border: 1px solid transparent; /* Remove a borda visível */
+}
+
+@media screen and (max-width:590px) {
+	
+	h1 {
+		font-size: 24px;
+	}
+
+	.converter-acao button {
+		padding:10px 15px;
+		color:#fff;
+	}
+
+	.box-conversor {
+		padding: 5px;
+	}
+
+}
+
+@media screen and (max-width:400px) {
+	
+	select {
+		font-size: 14px;
+	}
+
+}
